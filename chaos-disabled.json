@@ -1,0 +1,53 @@
+{
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Action": [
+        "ec2:DescribeImages",
+        "ec2:DescribeInstances",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeVolumes",
+        "ses:SendEmail",
+        "elasticloadbalancing:DescribeLoadBalancerPolicies",
+        "elasticloadbalancing:DescribeLoadBalancerPolicyTypes",
+        "elasticloadbalancing:DescribeInstanceHealth",
+        "elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "elasticloadbalancing:DescribeSSLPolicies",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTargetGroupAttributes",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeTags",
+        "elasticloadbalancing:DescribeAccountLimits",
+        "elasticloadbalancing:DescribeTargetHealth",
+        "elasticloadbalancing:DescribeTargetGroups",
+        "elasticloadbalancing:DescribeListenerCertificates",
+        "elasticloadbalancing:DescribeRules"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+        "Action": [
+        "autoscaling:DescribeAutoScalingGroups",
+        "autoscaling:DescribeAutoScalingInstances",
+        "autoscaling:DescribeLaunchConfigurations"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+        "Action": [
+        "sdb:BatchDeleteAttributes",
+        "sdb:BatchPutAttributes",
+        "sdb:DomainMetadata",
+        "sdb:GetAttributes",
+        "sdb:PutAttributes",
+        "sdb:ListDomains",
+        "sdb:CreateDomain",
+        "sdb:Select"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+   }
+ ]
+}
